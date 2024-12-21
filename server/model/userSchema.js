@@ -1,45 +1,17 @@
 const mongoose=require("mongoose");
-const validator=require("validator");
+const bcrypt = require('bcryptjs');
 
-const userSchema=mongoose.Schema({
-    name:{
-        type:String,
-        required:true
-    },
-    email:{
-        type:String,
-        required:true,
-        unique:true,
-        validate(value){
-            if(!validator.isEmail(value)){
-                throw new Error("Invalid Email");
-            }
-        }
-    },
-    mobile:{
-        type:Number,
-        required:true,
-        unique:true,
-        minlength:10
-    },
-    password:{
-        type:String,
-        required:true
-    },
-    cpassword:{
-        type:String,
-        required:true
-    },
-    tokens:[
-        {
-            token:{
-                type:String
-            }
-        }
-    ]
-})
+const UserSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+  walletBalance: { type: Number, default: 0 },
+}, { timestamps: true });
 
+UserSchema.pre('save', async function (next) {
+  if (!this.isModified('password')) return next();
+  const salt = await bcrypt.genSalt(10);
+  this.password = await bcrypt.hash(this.password, salt);
+});
 
-const User=mongoose.model("user",userSchema);
-
-module.exports=User;
+module.exports = mongoose.model('User', UserSchema);
