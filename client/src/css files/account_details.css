@@ -1,0 +1,106 @@
+.account-details-navbar{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 0%;
+    left: 0%;
+}
+
+.account-details-main{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    left: 30%;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 10px;
+    top: 25%;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+
+}
+
+.account-details-main .account-details-logo{
+    width: 30%;
+    height: 30%;
+    left: 35%;
+    top: 2%;
+    position: absolute;
+    background-image: url('../imgs/icons8-account-100.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.account-details-main .account-info-label{
+    position: absolute;
+    width: 10%;
+    height: 60%;
+    left: 25%;
+    top: 35%;
+    display: flex;
+}
+.account-details-main .account-info-label p{
+    position: absolute;
+    color: black;
+    width: 250%;
+    height: fit-content;
+    font-size: large;
+}
+
+.account-details-main .account-info-label p:first-of-type{
+    top: 0%;
+}
+.account-details-main .account-info-label p:nth-of-type(2){
+    top: 20%;
+}
+.account-details-main .account-info-label p:nth-of-type(3){
+    top: 40%;
+}
+.account-details-main .account-info-label p:nth-of-type(4){
+    top: 60%;
+}
+.account-details-main .account-info-label p:nth-of-type(5){
+    top: 80%;
+}
+.account-details-main .account-info-label p:nth-of-type(6){
+    top: 100%;
+}
+
+.account-details-main .account-info-details{
+    position: absolute;
+    width: 10%;
+    height: 60%;
+    top: 35.7%;
+    left: 45%;
+    display: flex;
+    color: black;
+    
+    /* background-color: aqua; */
+}
+
+.account-details-main .account-info-details p{
+    position: absolute;
+    color: black;
+    width: 300%;
+    height: fit-content;
+    /* font-size: large; */
+    text-align: center;
+    padding: 0 2px;
+}
+
+.account-details-main .account-info-details p:first-of-type{
+    top: 0;
+}
+.account-details-main .account-info-details p:nth-of-type(2){
+    top: 20%;
+}
+.account-details-main .account-info-details p:nth-of-type(3){
+    top: 40%;
+}
+.account-details-main .account-info-details p:nth-of-type(4){
+    top: 60%;
+}
+.account-details-main .account-info-details p:nth-of-type(5){
+    top: 80%;
+}
+
+

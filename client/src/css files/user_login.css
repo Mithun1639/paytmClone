@@ -1,0 +1,81 @@
+
+
+.user-login-navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+}
+
+.user-outer-div{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    background-color: white;
+    left: 35%;
+    top: 40%;
+    border-radius: 20px;
+    border: 2px black solid;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    /* background-image: url('C:\Users\tx\Desktop\Last Sem Project\open-wallet\client\moroccan-flower.png'); */
+}
+
+.user-outer-div h2{
+    color: black;
+}
+.user-outer-div input{
+    display: block;
+    position: relative;
+    left: 30%;
+    top: 10%;
+    width: 42%;
+    height: 7%;
+    margin: 15px 2px;
+    color: black;
+    background-color: white;
+    border: 2px black ridge;
+    border-radius: 5px;
+}
+
+.user-outer-div input:hover{
+    transition: 1s;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    
+    
+}
+.user-outer-div label{
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    
+}
+
+.user-outer-div label:first-of-type{
+    left: 12%;
+    top: 37%;
+    
+}
+.user-outer-div label:last-of-type{
+    left: 12%;
+    top: 51%;
+
+}
+
+.user-login-btn{
+    width: 15%;
+    height: 10%;
+    position: relative;
+    top: 20%;
+    background-color: white;
+    color: black;
+    border: 1.4px black inset;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.user-login-btn:hover{
+    transition: 1s;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    border: none;
+
+}

@@ -8,6 +8,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 
 // User registration
 router.post('/register', async (req, res) => {
+    console.log("register");
   const { name, email, password } = req.body;
   try {
     const userExists = await User.findOne({ email });
@@ -23,15 +24,20 @@ router.post('/register', async (req, res) => {
 
 // User login
 router.post('/login', async (req, res) => {
+    console.log("login")
   const { email, password } = req.body;
+  console.log(email, password)
   try {
     const user = await User.findOne({ email });
+    console.log(user)
     if (!user) return res.status(404).json({ message: 'User not found' });
 
     const isMatch = await bcrypt.compare(password, user.password);
+    console.log(isMatch)
     if (!isMatch) return res.status(400).json({ message: 'Invalid credentials' });
 
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1d' });
+    console.log(token)
     res.status(200).json({ token });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
@@ -40,6 +46,7 @@ router.post('/login', async (req, res) => {
 
 // Add money to wallet
 router.post('/add', authMiddleware, async (req, res) => {
+    console.log("hello")
     const { amount } = req.body;
     try {
       const user = await User.findById(req.user.id);

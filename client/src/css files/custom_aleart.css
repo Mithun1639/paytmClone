@@ -1,0 +1,35 @@
+.custom-aleart{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 18%;
+    left: 43%;
+    background-color: azure;
+    box-shadow: -4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    border-radius: 15px;
+}
+
+.custom-aleart p{
+    color: black;
+    font-weight: bold;
+
+}
+
+.custom-aleart button{
+    width: 25%;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    font-weight: bold;
+    
+}
+.custom-aleart button:hover{
+    transition: 1s;
+    border: none;
+    box-shadow: -4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+}
+
+.custom-aleart button:not(hover){
+    transition: 2s;
+}

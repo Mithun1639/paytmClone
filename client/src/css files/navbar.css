@@ -1,0 +1,134 @@
+.navbar{
+    width: 100%;
+    height: 100%;
+    /* background-color: #4099E1; */
+    /* background-color: #1e66c8; */
+    background-color: #17479b;
+    position: absolute;
+
+}
+
+.navbar-title{
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    left: 6%;
+    position: absolute;
+    top: 15%;
+    color: white;
+    /* text-shadow: 7px 7px 5px  black; */
+    
+    
+}
+
+.navbar ul:first-of-type{
+    position: absolute;
+    left: 31%;
+    display: flex;
+    top: 25%;
+}
+
+
+.navbar ul:first-of-type li{
+    position: relative;
+    margin: 0 15px;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+ 
+.navbar:first-of-type ul .navbar-username{
+    color: white;
+    font-weight: bold;
+
+}
+
+
+/* .navbar:first-of-type ul .navbar-username:hover{
+    z-index: 1;
+    color: black;
+} */
+
+.navbar:first-of-type .dropdown-content{
+    position: absolute;
+    left: 90%;
+    top: 70%;
+    width: 7%;
+    height: 60%;
+    background-color: azure;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    border-radius: 10%;
+    /* color: white; */
+    /* border: none; */
+    
+
+}
+
+.navbar:first-of-type .dropdown-content button{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15%;
+    position: relative;
+    top: 30%;
+    border: none;
+    box-shadow: -4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+
+}
+
+.navbar:first-of-type .dropdown-content button:hover{
+    border: none;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    
+}
+
+
+
+
+
+.navbar ul:nth-of-type(2){
+    position: absolute;
+    left: 82%;
+    display: flex;
+    top: 25%;
+}
+
+.navbar ul:nth-of-type(2) li{
+    position: relative;
+    margin: 0 20px;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul:nth-of-type(2) span:first-of-type{
+    width: 35%;
+    height: 120%;
+    left: 19%;
+    top: -10%;
+    position: absolute;
+    background-color: #4099E1;
+    /* border: 2px blue solid; */
+    border-radius: 15px;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+}
+
+.navbar ul:nth-of-type(2) span:last-of-type{
+    width: 35%;
+    height: 120%;
+    left: 60%;
+    top: -10%;
+    position: absolute;
+    background-color: #4099E1;
+    /* border: 2px aliceblue solid; */
+    border-radius: 15px;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+
+}
+

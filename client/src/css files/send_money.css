@@ -1,0 +1,114 @@
+.send-money-navbar
+{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 0%;
+    left: 0%;
+}
+
+.send-money-main
+{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    border: 2px black solid;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.send-money-main p
+{
+    position: absolute;
+    left: 43.5%;
+    top: 20%;
+}
+
+.send-money-main input{
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-weight: 200;
+    border: 2px black ridge;
+    border-radius: 5px;
+
+}
+
+.send-money-main input:first-of-type
+{
+    top: 40.5%;
+    left: 31%;
+    width: 35%;
+    height: 6%;
+    
+}
+.send-money-main input:nth-of-type(2)
+{
+    top: 52%;
+    left: 31%;
+    width: 35%;
+    height: 6%;
+    
+}
+
+.send-money-main input:nth-of-type(3)
+{
+    top: 64%;
+    left: 31%;
+    width: 35%;
+    height: 5%;
+    
+}
+.send-money-main input:nth-of-type(4)
+{
+    top: 74%;
+    left: 31%;
+    width: 35%;
+    height: 5%;
+    
+}
+
+.send-money-main select:first-of-type
+{
+    position: relative;
+    top: 54%;
+    left: 4%;
+    width: 36%;
+    height: 6%;
+    background-color: white;
+    color: black;
+    font-weight: 200;
+    border: 2px black ridge;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.send-money-main input::placeholder
+{
+    text-align: center;
+}
+.send-money-main button
+{
+    position: relative;
+    width: 10%;
+    height: 7%;
+    top: 66%;
+    left: -19.5%;
+    background-color: white;
+    color: black;
+    border: 1.5px black ridge;
+    border-radius: 20px;
+    font-weight: bold;
+} 
+
+.send-money-main button:hover
+{
+    transition: 1s;
+    box-shadow: 4.4px 8.8px 8.8px hsl(0deg 0% 0% / 0.36);
+    border: none;
+}

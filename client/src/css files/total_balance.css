@@ -1,0 +1,27 @@
+.total-bal-div-div
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.total-bal-div p:first-of-type
+{
+    position: absolute;
+    left: -1%;
+    display: inline;
+    width: 20%;
+    height: fit-content;
+    top: -20%;
+}
+
+.total-bal-div p:last-of-type
+{
+    position: absolute;
+    left: 90%;
+    display: inline;
+    width: 10%;
+    height: fit-content;
+    top: -20%;
+}
